@@ -19,5 +19,5 @@ docker-build:
 docker-push:
   stage: push
   script:
-    - "sudo docker login registry.gitlab.com/vishnu.raj21/no-rhythm-beat-box" -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}
+    - "sudo docker login registry.gitlab.com/vishnu.raj21/no-rhythm-beat-box -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}"
     - "sudo docker push registry.gitlab.com/vishnu.raj21/no-rhythm-beat-box"
