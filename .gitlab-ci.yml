@@ -1,6 +1,9 @@
 services:
   - docker:dind
 
+image : maven:latest
+
+
 variables:
   MAVEN_CLI_OPTS: "-s .m2/settings.xml --batch-mode"
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
@@ -11,7 +14,6 @@ stages:
   - push
 
 maven-package:
-  image : maven:latest
   stage: build
   script:
     - "ls -a"
@@ -26,7 +28,6 @@ maven-package:
       - target/*.jar
 
 docker-build:
-  image: docker:latest
   stage: build
   script:
     - "ls"
@@ -34,7 +35,6 @@ docker-build:
     - "docker build -t beatbox:latest ."
 
 docker-push:
-  image: docker:latest
   stage: push
   script:
     - "sudo docker login registry.gitlab.com/vishnu.raj21/no-rhythm-beat-box -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}"
