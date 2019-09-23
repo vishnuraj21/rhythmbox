@@ -17,6 +17,7 @@ maven-package:
     - "ls -a"
     - "pwd"
     - "mvn package"
+    - "cp target/beatbox-1.0-SNAPSHOT.jar ."
     - "ls -a"
     - "cd target"
     - "ls -a"
