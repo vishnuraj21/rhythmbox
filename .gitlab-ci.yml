@@ -19,6 +19,8 @@ maven-package:
 
 docker-build:
   stage: build
+  tags:
+    - docker
   script:
     - "docker build -t beatbox:latest ."
 
