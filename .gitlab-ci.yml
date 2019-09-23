@@ -19,7 +19,7 @@ maven-package:
     - "ls -a"
     - "pwd"
     - "mvn package"
-    - "cp target/beatbox-1.0-SNAPSHOT.jar ."
+    - "cp target/beatbox-1.0-SNAPSHOT.jar src/"
     - "ls -a"
     - "cd target"
     - "ls -a"
@@ -28,13 +28,16 @@ maven-package:
       - target/*.jar
 
 docker-build:
+  image: docker:latest
   stage: build
   script:
     - "ls"
     - "pwd"
+    - "mv src/beatbox-1.0-SNAPSHOT.jar ."
     - "docker build -t beatbox:latest ."
 
 docker-push:
+  image: docker:latest
   stage: push
   script:
     - "sudo docker login registry.gitlab.com/vishnu.raj21/no-rhythm-beat-box -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}"
