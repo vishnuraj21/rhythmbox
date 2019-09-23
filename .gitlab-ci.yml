@@ -14,7 +14,7 @@ maven-package:
   image : maven:latest
   stage: build
   script:
-    - "ls - a"
+    - "ls -a"
     - "pwd"
     - "mvn package"
   artifacts:
