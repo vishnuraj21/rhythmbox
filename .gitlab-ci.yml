@@ -19,7 +19,7 @@ maven-package:
     - "ls -a"
     - "pwd"
     - "mvn package"
-    - "cp target/beatbox-1.0-SNAPSHOT.jar src/"
+#    - "cp target/beatbox-1.0-SNAPSHOT.jar src/"
     - "ls -a"
     - "cd src"
     - "ls -a"
@@ -35,7 +35,7 @@ docker-build:
     - "pwd"
     - "cd src"
     - "ls"
-    - "cp src/beatbox-1.0-SNAPSHOT.jar ."
+#    - "cp src/beatbox-1.0-SNAPSHOT.jar ."
     - "docker build -t beatbox:latest ."
 
 docker-push:
