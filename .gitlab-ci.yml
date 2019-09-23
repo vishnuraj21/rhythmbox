@@ -33,8 +33,8 @@ docker-build:
   script:
     - "ls"
     - "pwd"
-    - "cd src"
-    - "ls"
+#    - "cd src"
+#    - "ls"
 #    - "cp src/beatbox-1.0-SNAPSHOT.jar ."
     - "docker build -t beatbox:latest ."
 
