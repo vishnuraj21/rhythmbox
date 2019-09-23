@@ -17,6 +17,9 @@ maven-package:
     - "ls -a"
     - "pwd"
     - "mvn package"
+    - "ls -a"
+    - "cd target"
+    - "ls -a"
   artifacts:
     paths:
       - target/*.jar
