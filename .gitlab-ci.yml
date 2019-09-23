@@ -23,6 +23,7 @@ docker-build:
   image: docker:latest
   stage: build
   script:
+    - "ls /var/lib/docker/tmp/docker-builder883829964/target/"
     - "docker build -t beatbox:latest ."
 
 docker-push:
