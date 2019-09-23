@@ -12,7 +12,7 @@ stages:
 maven-package:
   stage: build
   script:
-    - "mvn $MAVEN_CLI_OPTS package"
+    - "mvn package"
   artifacts:
     paths:
       - target/*.jar
