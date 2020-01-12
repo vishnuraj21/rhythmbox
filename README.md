@@ -3,6 +3,7 @@ Desktop app that creates beats from 16 percussion instruments. Create, save and 
 
 ## Prerequisites
 OpenJDK Runtime Environment (build 1.8.0)
+
 Apache Maven 3.6.0
 
 ## Execution
