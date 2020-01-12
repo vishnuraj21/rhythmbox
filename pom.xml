@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.headfirst.www.BeatBox</mainClass>
+                            <mainClass>com.beatbox.BeatBox</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

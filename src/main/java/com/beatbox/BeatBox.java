@@ -1,4 +1,4 @@
-package com.headfirst.www;
+package com.beatbox;
 
 
 import javax.sound.midi.*;
