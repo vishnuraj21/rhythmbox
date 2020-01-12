@@ -36,7 +36,7 @@ public class BeatBox {
 
     public void buildGui() {
 
-        frame = new JFrame("RhythmBox");
+        frame = new JFrame("rhythmbox");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
