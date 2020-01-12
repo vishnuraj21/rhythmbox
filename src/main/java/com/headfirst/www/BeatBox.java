@@ -36,7 +36,7 @@ public class BeatBox {
 
     public void buildGui() {
 
-        frame = new JFrame("NoRhythmBox");
+        frame = new JFrame("RhythmBox");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
@@ -63,11 +63,11 @@ public class BeatBox {
         buttonBox.add(tempoDownButton);
         tempoDownButton.addActionListener(new TempoDownActionListener());
 
-        JButton serializeIt = new JButton("Serialize It");
+        JButton serializeIt = new JButton("Save");
         buttonBox.add(serializeIt);
         serializeIt.addActionListener(new SerializeItActionListener());
 
-        JButton restoreBeats = new JButton("Restore");
+        JButton restoreBeats = new JButton("Upload");
         buttonBox.add(restoreBeats);
         restoreBeats.addActionListener(new RestoreBeatActionListener());
 

@@ -2,3 +2,5 @@
 src/main/resources
 target/
 !target/beatbox-1.0-SNAPSHOT.jar
+.iml
+.gitignore
