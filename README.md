@@ -6,11 +6,11 @@ OpenJDK Runtime Environment (build 1.8.0)
 Apache Maven 3.6.0
 
 ## Execution
-Navigate to ***beatbox/***
+1. Navigate to ***beatbox/***
 
-Build jar ```mvn clean install```. This creates a jar called beatbox-1.0-SNAPSHOT.jar.
+2. Build jar ```mvn clean install```. This creates a jar called beatbox-1.0-SNAPSHOT.jar.
 
-run jar ```java -jar beatbox-1.0-SNAPSHOT.jar```
+3. Run jar ```java -jar beatbox-1.0-SNAPSHOT.jar```
 
 
 ## Screenshots
